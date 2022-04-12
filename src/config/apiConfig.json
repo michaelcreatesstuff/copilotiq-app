@@ -1,0 +1,42 @@
+{
+  "connection": {
+    "hostname": "graphapi.com",
+    "scheme": "https",
+    "defaultHeaders": {
+      "Authorization": "authToken",
+      "method": "GET"
+    }
+  },
+  "datasources": {
+    "getAllUsers": {
+      "method": "GET",
+      "uri": "/users"
+    },
+    "getUser": {
+      "method": "GET",
+      "uri": "/users",
+      "headers": {
+        "x-client-request-scope": "getUser"
+      }
+    },
+    "createUser": {
+      "method": "POST",
+      "uri": "/users",
+      "headers": {
+        "x-client-request-scope": "createUser"
+      }
+    },
+    "getAsset": {
+      "method": "GET",
+      "uri": "/asset"
+    },
+    "getFriends": {
+      "method": "GET",
+      "uri": "/friends"
+    },
+    "getRecommendations": {
+      "method": "GET",
+      "uri": "/recommendations"
+    }
+  }
+}
