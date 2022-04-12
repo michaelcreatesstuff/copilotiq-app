@@ -24,6 +24,9 @@ src\api\index.js, and lines 37-47 in src\pages\UserPage.jsx
 
 The API endpoint responses have been displayed in the UI in the src\Components\Table\Table.jsx component
 
+Graph is an undirected weighted graph. Recommendations and friends are sorted by descending weight. Edge weight (friend to friend weight) is assumed to be based on how often they interact.
+Recommendation weight is calculated by adding edge (source to target weight) + (target to targetFriend weight).
+
 There is lots of potential to improve the functionality and UI, it is a very bare bones version of a social media site.
 
 Data from:
