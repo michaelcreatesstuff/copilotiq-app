@@ -15,7 +15,7 @@ The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
 Link to deployed version of app:
-https://copilot-app.herokuapp.com/
+https://copilotiq-app.herokuapp.com/
 
 I started out building out the UI and didn't have time to implement an actual API. We are grabbing data from csv files.
 
