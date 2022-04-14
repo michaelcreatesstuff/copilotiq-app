@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Modal, Button } from 'antd';
 
-const TableModal = ({ title, data }) => {
+const TableModal = ({ title, data, connections = false }) => {
   const [isModalVisible, setIsModalVisible] = useState(false);
 
   const showModal = () => {
@@ -23,9 +23,13 @@ const TableModal = ({ title, data }) => {
       </Button>
       <Modal title={title} visible={isModalVisible} onOk={handleOk} onCancel={handleCancel}>
         <div style={{ height: '50vh', overflowY: 'scroll' }}>
-          {data?.map((a) => {
-            return <div key={a.value}>{a.value}</div>;
-          })}
+          {connections
+            ? data?.map((a) => {
+                return <div key={a?.node?.value}>{a?.node?.value}</div>;
+              })
+            : data?.map((a) => {
+                return <div key={a.value}>{a.value}</div>;
+              })}
         </div>
       </Modal>
     </>
