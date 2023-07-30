@@ -18,8 +18,8 @@ const NavBar = () => {
   return (
     <Wrapper>
       <Link to="/">Home</Link>
-      <Heading1>CopilotIQ Frontend Offline Exercise</Heading1>
-      <Heading2>by Michael Yang</Heading2>
+      {/* <Heading1>CopilotIQ Frontend Offline Exercise</Heading1>
+      <Heading2>by Michael Yang</Heading2> */}
       <hr />
     </Wrapper>
   );
